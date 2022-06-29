@@ -1,13 +1,18 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { IProduct } from "./product";
 
 @Component({
     selector: "pm-products",
-    templateUrl:`./products-list.component.html`,
-    styleUrls: ['./product-list.component.css'],
+    templateUrl:`./products-list.component.html`, 
+    styleUrls: ['./product-list.component.css'], // we can set multiple file style in styles urls
 })
 
-export class ProductListComponent{
+export class ProductListComponent implements OnInit{
+
+    ngOnInit(): void {
+      console.log("Initializing");
+      
+    }
     title  = "Products List Components";
     imageWidth = 50;
     imageMargin = 2;
