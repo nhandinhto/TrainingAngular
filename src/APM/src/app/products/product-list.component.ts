@@ -102,5 +102,9 @@ export class ProductListComponent implements OnInit{
         return item.productName.toLocaleLowerCase().includes(value);
       })
     }
+
+    onRatingClicked( value : string ) : void{
+      console.log(`Clicking ${value} stars`);
+    }
     //#endregion
 }
