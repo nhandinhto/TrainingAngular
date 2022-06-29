@@ -33,7 +33,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor = "let product of products">
+                    <tr *ngFor = "let product of filterProduct">
                         <td>
                             <img    [src] = "product.imageUrl"
                                     [style.width.px] = "imageWidth"
