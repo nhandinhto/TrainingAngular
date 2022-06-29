@@ -1,8 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* Adding Bootstrap & font-awesome library */
-/* @import "~bootstrap/dist/css/boostrap.min.css";
-@import "~font-awesome/css/font-awesome.min.css"; */
+/* @import "~bootstrap/dist/css/boostrap.min.css"; */
+@import "~font-awesome/css/font-awesome.min.css";
 
 div.card-header {
  font-size: large;
