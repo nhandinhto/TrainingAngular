@@ -13,5 +13,5 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = "Create App Component";
+  title: string = "Create App Component";
 }
