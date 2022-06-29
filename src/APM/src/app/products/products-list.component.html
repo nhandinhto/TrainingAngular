@@ -1,10 +1,10 @@
-<div class="card">
-    <div class="card-header">
+<div class = "card">
+    <div class = "card-header">
         {{title}}
     </div>
-    <div class="card-body">
-        <div class="row">
-            <div class="col-md-2">
+    <div class = "card-body">
+        <div class = "row">
+            <div class = "col-md-2">
                 Filter By : 
             </div>
             <div class="col-md-4">
@@ -16,12 +16,12 @@
                 <h4>Filtered By : </h4>
             </div>
         </div>
-        <div class="table-responsive">
+        <div class = "table-responsive" *ngIf = "products.length">
             <table class="table">
                 <thead>
                     <tr>
                         <th>
-                            <button class="btn btn-primary">
+                            <button class = "btn btn-primary">
                                 Show image
                             </button>
                         </th>
