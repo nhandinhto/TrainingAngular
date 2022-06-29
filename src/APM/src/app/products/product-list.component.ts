@@ -10,7 +10,8 @@ export class ProductListComponent{
     imageWidth = 50;
     imageMargin = 2;
     showImage = false;
-    
+    listFilter = '';
+
     products: any[] = [
         {
             "productId": 1,
