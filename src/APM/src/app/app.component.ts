@@ -5,9 +5,7 @@ import { Component } from '@angular/core';
   template:`
     <div>
       <h1>{{title}}</h1>
-      <div>
-        My first AppComponent
-      </div>
+      <pm-products></pm-products>
     </div>
   `
 })
