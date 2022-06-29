@@ -33,7 +33,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor = "let product of products">
+                    <tr *ngFor = "let product of filterProduct">
                         <td>
                             <img    [src] = "product.imageUrl"
                                     [style.width.px] = "imageWidth"
@@ -42,7 +42,7 @@
                         </td>
                         <!-- use pipetype to display data with custom format you want to display |-->
                         <td>{{product.productName}}</td> 
-                        <td>{{product.productCode | lowercase}}</td>
+                        <td>{{product.productCode | lowercase | convertToSpace : '-'}}</td>
                         <td>{{product.releaseDate}}</td>
                         <td>{{product.price | currency : 'USD' : 'symbol' : '1.2-2'}}</td>
                         <td>{{product.starRating}}</td>
