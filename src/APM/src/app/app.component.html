@@ -1,6 +1,13 @@
 <div style="text-align:center">
   <h1>
-    Welcome to {{title}}!!
+    {{title}} !! 
   </h1>
-  ... Starter Files ...
+  <ul class="nav navbar-nav" style="display:flex;flex-direction:row;list-style: none;">
+    <li style = "flex:1" ><a [routerLink] = "['/welcome']">Home</a></li>
+    <li style ="flex:1" ><a [routerLink] = "['/products']">Products List</a></li>
+  </ul>
+
+</div>
+<div class = "container" style="text-align:center ;">
+  <router-outlet></router-outlet>
 </div>

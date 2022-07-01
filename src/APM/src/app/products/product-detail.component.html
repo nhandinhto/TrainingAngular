@@ -1,0 +1,38 @@
+<div>
+    <h1>{{pageTitle}}</h1>
+</div>
+<div class="card">
+    <div class="card-header"
+         *ngIf="product">
+        {{pageTitle + ' : ' + product?.productName}}
+    </div>
+    <div class="card-body"
+         *ngIf= "product"
+         style="flex-direction: row;display:flex">
+        <div class="responsive-table" style="flex:1;display:flex">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Code</th>
+                        <th>Available</th>
+                        <th>Price</th>
+                        <th>5 stars rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{product?.productName}}</td>
+                        <td>{{product?.productCode}}</td>
+                        <td>{{product?.releaseDate}}</td>
+                        <td>{{product?.price}}</td>
+                        <td>{{product?.starRating}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="card-footer">
+        <button (click) = 'onBack()'>Back</button>
+    </div>
+</div>
